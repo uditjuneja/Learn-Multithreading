@@ -1,0 +1,4 @@
+Semaphores
+Semaphores is a more advanced locking mechanism, which has an internal counter, rather than a lock flag, and it only blocks, 
+if more than a given number of threads have attempted to hold the semaphore. 
+Depending on how the semaphore is initialized, this allows multiple threads to acces the same code section the same time.
