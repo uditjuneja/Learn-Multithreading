@@ -3,6 +3,7 @@ Course on multi threading in Python
 
 Multithreading is a way of achieving multitasking. However, most often beginners confuse multi-threading with multi-processing. 
 
+### Processes and Threads. 
 At the core of computing in operating systems, tasks are executed either of the two ways, Processes and Threads. 
 
 In layman terms, Process is just a program in execution. Any process has 3 basic components:
@@ -10,11 +11,11 @@ In layman terms, Process is just a program in execution. Any process has 3 basic
 - The data associated with that program (variables, buffers, etc.)
 - The state of the program being executed. [(State of process)](https://en.wikipedia.org/wiki/Process_state)
 
-**Okay, But What’s multiprocessing?**
+### Okay, But What’s multiprocessing?
 The multiprocessing library uses separate memory space, multiple CPU cores, bypasses GIL limitations in CPython, child processes are killable(ex. function calls in program) and is much easier to use. Some caveats of the module are a larger memory footprint and IPC’s a little more complicated with more overhead.
 
 
-**Then, What is a Thread?**
+### Then, What is a Thread?
 - A thread is an entity within a process that can be scheduled for execution. Also, it is the smallest unit of processing that can be performed in an OS. 
 
 - **In a simple way, thread is a sequence of instructions within a program that can be executed independently of other code.**
@@ -32,7 +33,7 @@ Multiple threads can exists within one process where :
  - each thread contains its own register set and local variables
  - all threads of process shares the global variables and the program code.
 
-**Finally, What is Multithreading?**
+### Finally, What is Multithreading?
 Multithreading is defined as the ability of a processor to execute multiple threads concurrently.
  
 We can import threading in code by just typing 'import threading'
