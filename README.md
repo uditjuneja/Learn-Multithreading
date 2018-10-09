@@ -6,9 +6,9 @@ Multithreading is a way of achieving multitasking. However, most often beginners
 At the core of computing in operating systems, tasks are executed either of the two ways, Processes and Threads. 
 
 In layman terms, Process is just a program in execution. Any process has 3 basic components:
-        - The program itself
-        - The data associated with that program (variables, buffers, etc.)
-        - The state of the program being executed (State of process)[https://en.wikipedia.org/wiki/Process_state] 
+- The program itself
+- The data associated with that program (variables, buffers, etc.)
+- The state of the program being executed [State of process](https://en.wikipedia.org/wiki/Process_state)
 
 
 So what is thread?
