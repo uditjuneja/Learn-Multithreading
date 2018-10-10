@@ -1,19 +1,23 @@
 #RLock - shared resource can be release by any thread
 class Box(object):
     lock = threading.Lock()
+    # Constructor
     def __init__(self):
         self.total_items = 0
+    # Increments the tasks to execute in the Box
     def execute(self,n):
         Box.lock.acquire()
         self.total_items += n
         Box.lock.release()
-    def add(self):
+    # Add thread by acquiring the lock key from the Box and then re-locking after the thread is executed
+    def add(self): 
         print "1"
         Box.lock.acquire()
         print "1"
         self.execute(1)
         print "1"
         Box.lock.release()
+    # Decrements the tasks to execute in the Box
     def remove(self):
         Box.lock.acquire()
         self.execute(-1)
