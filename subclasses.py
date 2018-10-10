@@ -7,10 +7,11 @@ class myThread(threading.Thread):
         threading.Thread.__init__(self)
         self.threadID = threadID
 
+    # Run until exit condition received    
     def run(self):
         print ("Starting " + self.threadID)
         i = 0
-        while i >= 0:
+        while i >= 0: # Counts until the thread or the program is terminated
             i = i + 1
         print i
         print ("Exiting " + self.threadID)

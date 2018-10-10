@@ -29,8 +29,8 @@ def pool_Start(id):
 
 def main():
     Pool = MyPool()
-    for i in range(10):
-        Pool.apply_async(pool_Start, args=(i,))
+    for i in range(10): # creating a pool with 10 arguements for testing purposes
+        Pool.apply_async(pool_Start, args=(i,)) # applying threads to the current pool
     Pool.close()
     Pool.join()
 
